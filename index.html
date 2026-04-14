@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurité | La Agencia de Marketing de Alto Rendimiento</title>
+    <meta name="description" content="La agencia de marketing digital que fusiona IA y estrategia para escalar tus ventas. 16 años de resultados nos respaldan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+</head>
+<body>
+
+    <!-- Header Navigation (Minimal) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="./assets/logo_futurite_ch.png" alt="Futurité" class="nav-logo-img">
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <div class="nav-dropdown">
+                    <a href="#servicios" class="dropdown-toggle" style="display:flex; align-items:center; gap:6px;">Servicios <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#redes-sociales">Redes Sociales</a></li>
+                        <li><a href="#google-ads">Google Ads</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#apps">APP'S</a></li>
+                        <li><a href="#ecommerce">Comercio Electrónico</a></li>
+                        <li><a href="#marketing-medico">Marketing médico</a></li>
+                    </ul>
+                </div>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#ubicaciones">Ubicaciones</a>
+                <!-- Mobile ONLY Button -->
+                <a href="#contacto" class="btn btn-primary nav-btn-mobile">Contacto</a>
+            </nav>
+            <a href="#contacto" class="btn btn-primary nav-btn">Contacto</a>
+            <!-- Hamburger Toggle -->
+            <button class="mobile-menu-btn" aria-label="Abrir Menú"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="home">
+        
+        <!-- Creative Video Background layer -->
+        <div class="hero-video-wrapper">
+            <video src="./videos/hero.mp4" autoplay loop muted playsinline class="hero-video-media"></video>
+            <div class="hero-video-overlay"></div>
+        </div>
+
+        <div class="hero-visual-right">
+            <!-- Efecto de Pulso Guardado para Futuro Uso
+            <div class="radar-circle">
+                <div class="radar-logo-center">
+                    <img src="./assets/icono_futurite_ch.png" alt="Futurité Pulse">
+                </div>
+                <div class="radar-dot active"></div>
+                <div class="radar-dot shadow-1"></div>
+                <div class="radar-dot shadow-2"></div>
+            </div>
+            -->
+            <div class="hero-bg-glow"></div>
+            <div class="hero-bg-img"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">No hacemos ruido.<br><span class="text-gradient">Generamos rentabilidad.</span></h1>
+                <p class="hero-subtitle">La agencia de marketing digital que fusiona IA y estrategia para escalar tus ventas. 16 años de resultados nos respaldan.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-lime">Escalar mi negocio hoy</button>
+                    <div class="trust-badges">
+                        <img src="./assets/icono-meta-business.webp" alt="Meta Business Partner" class="partner-logo">
+                        <img src="./assets/icono-google-premier.webp" alt="Google Partner" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Stats de Confianza (Asymmetric Typographic Layout) -->
+    <section class="stats-new" id="confianza">
+        <div class="container stats-new-container">
+            <!-- Columna Izquierda: Títulos -->
+            <div class="stats-new-title-col">
+                <span class="eyebrow" style="font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: var(--clr-base); opacity: 0.8; margin-bottom: 32px; display: block; font-weight: 600;">Datos de Confianza</span>
+                <h2 style="font-size: 5rem; font-weight: 800; line-height: 0.95; letter-spacing: -2px; color: var(--clr-base); margin-bottom: 0;">Métricas que</h2>
+                <h2 style="font-size: 5rem; font-weight: 800; line-height: 0.95; letter-spacing: -2px; color: var(--clr-primary); opacity: 0.9; margin-bottom: 32px;">Prueban Valor.</h2>
+                <p style="color: var(--clr-base); font-size: 1.125rem; max-width: 400px; line-height: 1.6;">Futurité es una agencia digital enfocada en crear resultados. Somos tus aliados de negocio impulsados por Inteligencia Artificial y datos exactos.</p>
+            </div>
+
+            <!-- Columna Derecha: Lista Split -->
+            <div class="stats-new-list-col">
+                <div class="stat-row" data-reveal>
+                    <div class="stat-big">
+                        <span class="counter" data-target="16">0</span><span class="symbol"></span>
+                    </div>
+                    <div class="stat-desc">Años de experiencia dominando el entorno digital estratégico.</div>
+                </div>
+                <div class="stat-row" data-reveal>
+                    <div class="stat-big">
+                        <span class="counter" data-target="40">0</span><span class="symbol">+</span>
+                    </div>
+                    <div class="stat-desc">Giros de negocio y nichos diferentes impactados positivamente.</div>
+                </div>
+                <div class="stat-row" data-reveal>
+                    <div class="stat-big">
+                        <span class="counter" data-target="140">0</span><span class="symbol">+</span>
+                    </div>
+                    <div class="stat-desc">Marcas gestionadas exitosamente a nivel global.</div>
+                </div>
+                <div class="stat-row" data-reveal>
+                    <div class="stat-big" style="display: flex; align-items: baseline;">
+                        <span class="symbol" style="margin-right: 8px;">+</span><span class="counter" data-target="4">0</span><span class="symbol" style="font-size: 2rem; margin-left: 12px; margin-right: 0;">MDP</span>
+                    </div>
+                    <div class="stat-desc">de inversión en medios digitales administrada mensualmente.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Servicios de Marketing Digital -->
+    <section class="servicios full-bleed" id="servicios">
+        <div class="container title-container">
+            <h2 class="section-title">El Ecosistema del Crecimiento</h2>
+            <p class="section-subtitle">Cada empresa es diferente y su estrategia de Marketing también. En Futurité, ofrecemos diversas estrategias de Marketing Digital con base en los objetivos del cliente y siempre enfocados en alcanzar los resultados.</p>
+        </div>
+        
+        <div class="servicios-grid full-width-grid">
+            
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_social.jpg'); background-size: cover; background-position: center; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                        <h3>Redes Sociales</h3>
+                        <p>Como agencia de redes sociales, aumentamos tus ventas y mejoramos tu posicionamiento con campañas de marketing digital en Monterrey para que llegues a retornos de inversión ideales.</p>
+                    </div>
+                </div>
+
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_ads.jpg'); background-size: cover; background-position: center; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+                        <h3>Google Ads</h3>
+                        <p>Incrementamos tus ventas con campañas de Google Ads en Monterrey a través del posicionamiento en buscadores y motores de búsqueda.</p>
+                    </div>
+                </div>
+
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_seo.jpg'); background-size: cover; background-position: center right; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-ranking-star"></i></div>
+                        <h3>Posicionamiento WEB (SEO)</h3>
+                        <p>Te ayudamos a ser la opción #1 en Google con estrategias de SEO que integran el posicionamiento tradicional y las nuevas tendencias impulsadas por IA. Combinamos técnicas de SEO con Generative Engine Optimization (GEO) y optimización basada en modelos de lenguaje (LLM SEO) para que tu marca esté donde tus clientes ya están buscando.</p>
+                    </div>
+                </div>
+
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_apps.jpg'); background-size: cover; background-position: center; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>Desarrollo de Aplicaciones (APPS)</h3>
+                        <p>Realizamos desarrollos de aplicaciones (APPS), nativas o multiplataformas con enfoque en la experiencia del usuario (Diseño UX), ya sea para sitios de escritorio o dispositivos móviles.</p>
+                    </div>
+                </div>
+
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_design.jpg'); background-size: cover; background-position: center; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Diseño Gráfico</h3>
+                        <p>Diseñamos desde el logotipo hasta toda la imagen corporativa completa para que estés listo para comenzar con tu estrategia de marketing digital.</p>
+                    </div>
+                </div>
+
+                <div class="servicio-card" data-reveal>
+                    <div style="position: absolute; inset: 0; background-image: url('./assets/svc_ecommerce.jpg'); background-size: cover; background-position: center; opacity: 0.05; filter: grayscale(100%); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2;">
+                        <div class="sv-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <h3>Comercio electrónico</h3>
+                        <p>Desarrollamos tiendas en línea y creamos estrategias de e-commerce orientadas a impulsar tus ventas online funcionales tanto para usuarios en desktop o móviles.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- 4. ¿Por qué invertir en marketing digital? -->
+    <section class="why-invest" id="por-que">
+        <div class="container">
+            <div class="why-text title-container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2>¿Por qué invertir ahora?</h2>
+                <p class="lead-text">En un mundo ahogado en información, la <strong>visibilidad es la nueva moneda</strong>.</p>
+                <p>Tu competencia ya está invirtiendo. Nosotros te ayudamos a construir la infraestructura digital necesaria para que tu negocio deje de ser una opción y se convierta en la primera elección del consumidor.</p>
+                
+            </div>
+            
+            <div class="market-stats" data-reveal>
+                <div class="market-stat">
+                    <h3>110 millones</h3>
+                    <p>de usuarios de internet en México</p>
+                </div>
+                <div class="market-stat">
+                    <h3>$2,900 mdd</h3>
+                    <p>de inversión anual en marketing digital en México</p>
+                </div>
+                <div class="market-stat">
+                    <h3>+22%</h3>
+                    <p>de crecimiento en inversión en publicidad digital en México</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portafolio y Clientes -->
+    <section class="portafolio" id="portafolio">
+        <div class="north-star-wrapper">
+            <div class="ns-badge">
+                <div class="ns-fillet-left"></div>
+                <div class="ns-fillet-right"></div>
+                <svg viewBox="0 0 200 200" class="ns-svg">
+                    <path id="ns-circle" d="M 100, 100 m -65, 0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0" fill="none" />
+                    <text>
+                        <textPath href="#ns-circle" startOffset="0%" textLength="408">THE NORTH STAR ★ THE NORTH STAR ★ </textPath>
+                    </text>
+                </svg>
+                <div class="ns-icon-wrapper">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="portfolio-header">
+                <h2>Portafolio</h2>
+                <p>Nuestra carta de presentación son nuestros resultados.</p>
+            </div>
+            
+            <div class="portfolio-gallery">
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/2.webp" alt="Caso de Éxito Clínica" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Salud</span>
+                    <h3 class="portfolio-title">Sistema de Clínicas</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/PetroSeven.webp" alt="Caso de Éxito PetroSeven" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Retail</span>
+                    <h3 class="portfolio-title">Petro-7</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/Portafolio_futurite_2022_amway.webp" alt="Caso de Éxito Amway" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">E-commerce</span>
+                    <h3 class="portfolio-title">Amway</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/Terza_01.webp" alt="Caso de Éxito Terza" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Industrial</span>
+                    <h3 class="portfolio-title">Terza Alfombras</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/futurite-home-bosch.webp" alt="Caso de Éxito Bosch" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Tecnología</span>
+                    <h3 class="portfolio-title">Bosch México</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/futurite-home-invercap.webp" alt="Caso de Éxito Invercap" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Finanzas</span>
+                    <h3 class="portfolio-title">Afore InverCap</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/futurite-home-lety.webp" alt="Caso de Éxito Lety" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Retail</span>
+                    <h3 class="portfolio-title">Pastelería Lety</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/futurite-home-mercedes-benz.webp" alt="Caso de Éxito Mercedes Benz" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Automotriz</span>
+                    <h3 class="portfolio-title">Mercedes Benz Autobuses</h3>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="./assets/portafolio_home/futurite-home-traveliz.webp" alt="Caso de Éxito Traveliz" loading="lazy">
+                    <div class="portfolio-overlay"></div>
+                    <span class="portfolio-badge">Turismo</span>
+                    <h3 class="portfolio-title">Traveliz</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee de Clientes (Extracto Independiente) -->
+    <div class="clients-marquee">
+        <p class="marquee-title">Más de 90 empresas líderes confían en Futurité</p>
+        <div class="marquee-track">
+                <!-- Javascript will duplicate logic here if needed, but we'll hardcode one track -->
+                <div class="marquee-content">
+                    <img src="./assets/clientes/LOGOTIPO-ARCA.webp" alt="Arca" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-BANREGIO.webp" alt="Banregio" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-CEMEX.webp" alt="Cemex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-CINTERMEX.webp" alt="Cintermex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-ELIZONDO.webp" alt="Elizondo" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-FINANCIERIAMEXI.webp" alt="Financiera" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-GAMAMUSIC.webp" alt="Gama Music" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-HOSPITARIA.webp" alt="Hospitaria" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-INVERCAP.webp" alt="Invercap" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MAXIRENT.webp" alt="Maxirent" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MG.webp" alt="MG" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MOTOMEX.webp" alt="Motomex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-OFFICECLASS.webp" alt="Office Class" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-SULTANA.webp" alt="Sultana" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-TECMILENIO.webp" alt="Tecmilenio" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-TERZA.webp" alt="Terza" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-UDEM.webp" alt="Udem" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-VIVA.webp" alt="Viva" class="client-logo-img">
+                    <!-- Duplicate for infinite scrolling -->
+                    <img src="./assets/clientes/LOGOTIPO-ARCA.webp" alt="Arca" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-BANREGIO.webp" alt="Banregio" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-CEMEX.webp" alt="Cemex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-CINTERMEX.webp" alt="Cintermex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-ELIZONDO.webp" alt="Elizondo" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-FINANCIERIAMEXI.webp" alt="Financiera" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-GAMAMUSIC.webp" alt="Gama Music" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-HOSPITARIA.webp" alt="Hospitaria" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-INVERCAP.webp" alt="Invercap" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MAXIRENT.webp" alt="Maxirent" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MG.webp" alt="MG" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-MOTOMEX.webp" alt="Motomex" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-OFFICECLASS.webp" alt="Office Class" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-SULTANA.webp" alt="Sultana" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-TECMILENIO.webp" alt="Tecmilenio" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-TERZA.webp" alt="Terza" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-UDEM.webp" alt="Udem" class="client-logo-img">
+                    <img src="./assets/clientes/LOGOTIPO-VIVA.webp" alt="Viva" class="client-logo-img">
+                </div>
+            </div>
+        </div>
+
+
+    <!-- 6. Preguntas Frecuentes -->
+    <section class="faq-section" id="faqs" style="padding: 120px 0; background: var(--clr-base);">
+        <div class="container">
+            <div style="margin-bottom: 60px; text-align: center;">
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">1- ¿Qué es el marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>El marketing digital es el conjunto de acciones y estrategias publicitarias que utilizan canales digitales como redes sociales, buscadores y sitios web para promover los productos y servicios de una empresa, permitiendo medir resultados en tiempo real, segmentar audiencias y optimizar las campañas regularmente.</p>
+                        <p>En Futurite, agencia de marketing digital en Monterrey, nos especializamos en ofrecer estrategias digitales que conectan a las marcas con sus clientes de forma efectiva.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">2- ¿Cuáles son las principales estrategias del marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>Las estrategias de marketing digital más utilizadas incluyen el marketing de contenidos, las estrategias de redes sociales, el e-mail marketing, el posicionamiento SEO y las estrategias de Google Ads. Cada una de ellas se adapta según los objetivos de la marca.</p>
+                        <p>El marketing de contenidos se refiere a toda la información que ayuda a educar, informar o entretener al cliente con el fin de que busque el producto que se ofrece para satisfacer una o varias de sus necesidades.</p>
+                        <p>Las <a href="#">redes sociales</a> permiten la promoción de la marca con campañas de alcance e interacción para posteriormente llevar a la conversión. Son muy eficientes, ya que ofrecen un alto número de usuarios a los cuales llegar.</p>
+                        <p>El e-mail marketing consiste en mandar un mensaje comercial con el objetivo de aumentar la relación con un cliente potencial o actual y convencerlo de ejecutar una determinada acción.</p>
+                        <p>El marketing de búsqueda, o <a href="#">posicionamiento SEO</a>, busca colocar a un sitio web en los primeros lugares de manera orgánica, utilizando Generative Engine Optimization, (GEO) y optimización basada en modelos de lenguaje (LLM SEO).</p>
+                        <p>Las estrategias de <a href="#">Google Ads</a> sitúan anuncios en buscadores como Google o incluso en plataformas como YouTube cuando alguien esté buscando o viendo contenido relacionado con los productos o servicios que una marca ofrece, utilizando una segmentación.</p>
+                        <p>En Futurite, nuestra agencia de marketing digital en Monterrey, combinamos la tecnología con la estrategia para alcanzar los objetivos de nuestros clientes y lograr resultados medibles y sostenibles.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">3- ¿En qué me beneficia contratar una agencia de marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>Contratar a una agencia de marketing digital, te permite contar con un equipo especializado que entiende el mercado, las plataformas digitales y las mejores prácticas para impulsar tu marca.</p>
+                        <p>Esto te permitirá crear contenido original que te diferencie de la competencia, comunicarte de la mejor manera con tu público e incrementar tus ventas con una estrategia efectiva, mejorando tu retorno de inversión.</p>
+                        <p>Si buscas una agencia de marketing digital en Monterrey enfocada en resultados para cumplir tus metas comerciales, Futurite es tu mejor opción.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">4- ¿Cuáles son las ventajas de lograr un posicionamiento SEO con una agencia de marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>El posicionamiento SEO permite que tu sitio web aparezca en los primeros resultados de búsqueda de Google, atrayendo tráfico orgánico, aumentando tu visibilidad digital y dando mayor credibilidad, prestigio y reputación a tu marca.</p>
+                        <p>Una agencia de marketing digital, como Futurite, te ayudará desarrollando estrategias SEO personalizadas que combinen técnicas de posicionamiento tradicional con tendencias de IA, como Generative Engine Optimization (GEO) y optimización basada en modelos de lenguaje (LLM SEO).</p>
+                        <p>Así, sin pagar por anuncios, mejorarás tu posicionamiento, atraerás leads de calidad y podrás aumentar conversiones cuando los usuarios busquen palabras claves en internet. Además, la posición que alcances durará más tiempo, ya que no dependerás de una contratación de publicidad.</p>
+                        <p>Como agencia de marketing digital en Monterrey, entendemos cómo funciona el posicionamiento orgánico y nos hemos posicionado entre las 10 mejores empresas de SEO a nivel nacional*, ya que trabajamos para incrementar el tráfico de calidad a tu sitio y que generes más ingresos.</p>
+                        <p style="font-size: 0.75rem; color: var(--clr-primary);">*https://marketing4ecommerce.mx</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 5 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">5- ¿Qué debo considerar para definir una estrategia de marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>Para definir una estrategia de marketing digital, consideramos los objetivos de tu negocio, el perfil de tu audiencia, el estado actual de tu presencia digital, los canales más adecuados y los recursos disponibles. Con esto en mente, analizamos cómo podemos ejecutar una estrategia óptima.</p>
+                        <p>En Futurite, agencia de marketing digital en Monterrey, sabemos lo que necesitas para crear estrategias exitosas y te ayudamos a diseñarlas para maximizar sus resultados y optimizar tu inversión.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 6 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">6- ¿Cómo logra una agencia de marketing digital convertir a usuarios en clientes?</summary>
+                    <div class="faq-answer">
+                        <p>Para convertir usuarios en clientes, utilizamos estrategias de atracción, interacción y conversión a partir de los objetivos de tu marca. A partir de la identificación de tu público meta, adaptamos el diseño, contenido y lenguaje de las campañas para optimizarlas.</p>
+                        <p>En Futurite, agencia de marketing digital en Monterrey, desarrollamos estrategias efectivas que transforman el interés en acción, persuadiendo a tu público y guiándolos en el proceso de conversión.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 7 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">7- ¿Por qué escoger a Futurité, agencia de marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>En Futurite, somos una agencia de marketing digital en Monterrey con más de 10 años de experiencia en la creación de estrategias enfocadas en performance y resultados medibles.</p>
+                        <p>Más de 100 marcas han confiado en nuestro servicio y hemos trabajado con más de 40 giros diferentes, convirtiendo a nuestros clientes en líderes de sus industrias.</p>
+                        <p>Somos Google Partner Premier y Meta Business Partner, consolidándonos como tu mejor aliado para impulsar el crecimiento de tu marca, productos y servicios.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 8 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">8- ¿Qué ventajas ofrece Google Ads a una agencia de marketing digital?</summary>
+                    <div class="faq-answer">
+                        <p>Google Ads permite que una agencia de marketing digital muestre publicidad de tu marca a través de canales digitales a quienes puedan estar interesados en tus productos o servicios a través de la segmentación de audiencias y control de presupuestos para obtener los mejores resultados.</p>
+                        <p>Como agencia de marketing digital en Monterrey, en Futurite utilizamos Google Ads en estrategias diseñadas para aumentar tu retorno de inversión, utilizando herramientas que nos permiten dar seguimiento a quienes han hecho clic en tus anuncios.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 9 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">9- ¿Qué es un lead y cómo ayuda a una agencia de marketing digital en Monterrey?</summary>
+                    <div class="faq-answer">
+                        <p>Un lead se genera cuando una persona interesada en tus productos o servicios proporciona sus datos de contacto en un formulario de tu página web o redes sociales.</p>
+                        <p>Generar leads es clave para construir una base de clientes potenciales, ya que ofrece una nueva vía de comunicación con los usuarios y una forma de identificar en qué punto del proceso de compra se encuentra tu prospecto. Así, entre más leads de calidad generes, más probabilidades de venta tendrás.</p>
+                        <p>Como agencia de marketing digital en Monterrey, en Futurite diseñamos estrategias para atraer, calificar y convertir leads a través de anuncios y contenido de calidad.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 10 -->
+                <details class="faq-item" name="faq-group">
+                    <summary class="faq-question">10- ¿Cómo ayuda una agencia de marketing digital a posicionar servicios médicos?</summary>
+                    <div class="faq-answer">
+                        <p>Una agencia de marketing digital ayuda a posicionar servicios médicos mediante estrategias como posicionamiento SEO local, campañas de Google Ads, presencia profesional en redes sociales y contenido de valor.</p>
+                        <p>Si eres un profesional con un consultorio individual o una clínica especializada orientada a los servicios de salud, una estrategia de marketing para el reconocimiento de tu marca o prospección de nuevos clientes puede traer muchos beneficios.</p>
+                        <p>En Futurite, agencia de marketing digital en Monterrey, tenemos experiencia colaborando con Cirujanos plásticos, traumatólogos, oftalmólogos y bariatras en Monterrey, ayudándoles a destacar con herramientas como Google Ads y Google Analytics posicionando keywords aptas para cada giro con estrategias confiables y éticas.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-alt">
+        <div class="container">
+            <div class="footer-alt-grid">
+                
+                <!-- Left Column -->
+                <div class="footer-alt-col footer-alt-brand">
+                    <img src="./assets/logo_futurite_ch.png" alt="Futurité" class="footer-alt-logo">
+                    <p class="footer-alt-desc">
+                        Plaza Tanarah Piso 21 Av. José Vasconcelos<br>
+                        345-Ote, Santa Engracia, 66267<br>
+                        San Pedro Garza García, N.L.
+                    </p>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="footer-alt-col footer-alt-links">
+                    <div class="footer-links-col">
+                        <a href="#home">Inicio</a>
+                        <a href="#nosotros">Nosotros</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#portafolio">Portafolio</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <a href="#vacantes">Únete al equipo</a>
+                        <a href="#faq">Preguntas</a>
+                        <a href="#privacidad">Privacidad</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="footer-alt-col footer-alt-contact">
+                    <a href="tel:8120929666" class="footer-big-link">(81) 2092 - 9666</a>
+                    <a href="mailto:hola@futurite.com" class="footer-big-link">hola@futurite.com</a>
+                    
+                    <div class="footer-alt-socials">
+                        <a href="#">Facebook</a> &middot; 
+                        <a href="#">Instagram</a> &middot; 
+                        <a href="#">LinkedIn</a> &middot; 
+                        <a href="#">Twitter</a> &middot; 
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-alt-bottom">
+                <p>&copy; 2026 <strong>Futurité</strong>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
