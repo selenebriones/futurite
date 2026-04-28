@@ -11,21 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./assets/favicon.png">
-    <!-- Meta Pixel Code -->
-    <script async type="4775081c8330426ee4dcadc5-text/javascript">
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1508926559403454');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1508926559403454&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -36,10 +21,25 @@
                 <img src="./assets/logo_futurite_ch.png" alt="Futurité" class="nav-logo-img">
             </div>
             <nav class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <div class="nav-dropdown">
+                    <a href="#servicios" class="dropdown-toggle" style="display:flex; align-items:center; gap:6px;">Servicios <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="agencia-de-redes-sociales.html">Redes Sociales</a></li>
+                        <li><a href="agencia-de-google-ads.html">Google Ads</a></li>
+                                                <li><a href="#seo">SEO</a></li>
+                        <li><a href="#apps">APP'S</a></li>
+                        <li><a href="#ecommerce">Comercio Electrónico</a></li>
+                        <li><a href="#marketing-medico">Marketing médico</a></li>
+                    </ul>
+                </div>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="https://futurite.com/blog-marketing-digital/" target="_blank" rel="noopener noreferrer">Blog</a>
                 <!-- Mobile ONLY Button -->
-                <a href="#contacto" class="btn btn-primary nav-btn-mobile">Contacto</a>
+                <a href="contacto.html" class="btn btn-primary nav-btn-mobile">Contacto</a>
             </nav>
-            <a href="#contacto" class="btn btn-primary nav-btn">Contacto</a>
+            <a href="contacto.html" class="btn btn-primary nav-btn">Contacto</a>
             <!-- Hamburger Toggle -->
             <button class="mobile-menu-btn" aria-label="Abrir Menú"><i class="fa-solid fa-bars"></i></button>
         </div>
@@ -74,7 +74,7 @@
                 <h1 class="hero-title">No hacemos ruido.<br><span class="text-gradient">Generamos rentabilidad.</span></h1>
                 <p class="hero-subtitle">La agencia de marketing digital que fusiona IA y estrategia para escalar tus ventas. 16 años de resultados nos respaldan.</p>
                 <div class="hero-actions">
-                    <a href="#contacto" class="btn btn-lime">Escalar mi negocio hoy</a>
+                    <button class="btn btn-lime">Escalar mi negocio hoy</button>
                     <div class="trust-badges">
                         <img src="./assets/icono-meta-business.webp" alt="Meta Business Partner" class="partner-logo">
                         <img src="./assets/icono-google-premier.webp" alt="Google Partner" class="partner-logo">
@@ -202,7 +202,7 @@
                 
             </div>
             
-            <div class="market-stats" data-reveal>
+            <div class="market-stats" data-reveal style="margin-bottom: 80px;">
                 <div class="market-stat">
                     <h3>110 millones</h3>
                     <p>de usuarios de internet en México</p>
@@ -228,7 +228,7 @@
                 <svg viewBox="0 0 200 200" class="ns-svg">
                     <path id="ns-circle" d="M 100, 100 m -65, 0 a 65,65 0 1,1 130,0 a 65,65 0 1,1 -130,0" fill="none" />
                     <text>
-                        <textPath href="#ns-circle" startOffset="0%" textLength="408">THE NORTH STAR ★ THE NORTH STAR ★ </textPath>
+                        <textPath href="#ns-circle" startOffset="0%" textLength="408">LA ESTRELLA DEL NORTE ★ LA ESTRELLA DEL NORTE ★ </textPath>
                     </text>
                 </svg>
                 <div class="ns-icon-wrapper">
@@ -238,7 +238,7 @@
         </div>
 
         <div class="container">
-            <div class="portfolio-header">
+            <div class="portfolio-header" style="margin-top: 60px;">
                 <h2>Portafolio</h2>
                 <p>Nuestra carta de presentación son nuestros resultados.</p>
             </div>
@@ -352,7 +352,7 @@
 
 
     <!-- 6. Preguntas Frecuentes -->
-    <section class="faq-section" id="faqs" style="padding: 120px 0; background: var(--clr-base);">
+    <section class="faq-section" style="padding: 120px 0; background: var(--clr-base);">
         <div class="container">
             <div style="margin-bottom: 60px; text-align: center;">
                 <h2>Preguntas Frecuentes</h2>
@@ -405,7 +405,7 @@
                 </details>
 
                 <!-- FAQ Item 5 -->
-                <details class="faq-item" name="faq-group">
+                <details class="faq-item" name="faq-group" id="faqs">
                     <summary class="faq-question">5- ¿Qué debo considerar para definir una estrategia de marketing digital?</summary>
                     <div class="faq-answer">
                         <p>Para definir una estrategia de marketing digital, consideramos los objetivos de tu negocio, el perfil de tu audiencia, el estado actual de tu presencia digital, los canales más adecuados y los recursos disponibles. Con esto en mente, analizamos cómo podemos ejecutar una estrategia óptima.</p>
@@ -464,24 +464,6 @@
         </div>
     </section>
 
-    <!-- 7. Contacto -->
-    <section class="contact-section" id="contacto">
-        <div class="container contact-container">
-            <h2 class="contact-heading">Transforma tu visión en resultados<br>tangibles. Hablemos de lo que<br>podemos lograr juntos.</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <input type="text" id="formNombre" placeholder="Nombre*" required>
-                    <input type="text" id="formApellidos" placeholder="Apellidos*" required>
-                </div>
-                <input type="email" id="formCorreo" placeholder="Correo Electrónico*" required>
-                <input type="tel" id="formTelefono" placeholder="Teléfono (10 Digitos)*" required>
-                <input type="text" id="formEmpresa" placeholder="Empresa">
-                <textarea id="formMensaje" placeholder="Mensaje..." rows="6" required></textarea>
-                <button type="submit" class="btn btn-primary contact-submit">Enviar formulario</button>
-            </form>
-        </div>
-    </section>
-
     <footer class="footer-alt">
         <div class="container">
             <div class="footer-alt-grid">
@@ -490,14 +472,26 @@
                 <div class="footer-alt-col footer-alt-brand">
                     <img src="./assets/logo_futurite_ch.png" alt="Futurité" class="footer-alt-logo">
                     <p class="footer-alt-desc">
-                        Plaza Tanarah Piso 21 Av. José Vasconcelos<br>
-                        345-Ote, Santa Engracia, 66267<br>
+                        Plaza Tanarah Piso 21 Av. José Vasconcelos 345-Ote,<br>
+                        Santa Engracia, 66267<br>
                         San Pedro Garza García, N.L.
                     </p>
                 </div>
 
                 <!-- Middle Column -->
                 <div class="footer-alt-col footer-alt-links">
+                    <div class="footer-links-col">
+                        <a href="#home">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="portafolio.html">Portafolio</a>
+                        <a href="https://futurite.com/blog-marketing-digital/" target="_blank" rel="noopener noreferrer">Blog</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <a href="#vacantes">Únete al equipo</a>
+                        <a href="#faqs">Preguntas</a>
+                        <a href="privacidad.html">Privacidad</a>
+                        <a href="contacto.html">Contacto</a>
+                    </div>
                 </div>
 
                 <!-- Right Column -->
@@ -509,7 +503,7 @@
                         <a href="https://www.facebook.com/Futurite/" target="_blank" rel="noopener noreferrer">Facebook</a> &middot; 
                         <a href="https://www.instagram.com/futurite/" target="_blank" rel="noopener noreferrer">Instagram</a> &middot; 
                         <a href="https://mx.linkedin.com/company/futurite" target="_blank" rel="noopener noreferrer">LinkedIn</a> &middot; 
-                        <a href="https://x.com/Futurite" target="_blank" rel="noopener noreferrer">Twitter</a> &middot; 
+                        <a href="https://x.com/Futurite" target="_blank" rel="noopener noreferrer">X</a> &middot; 
                         <a href="https://www.tiktok.com/@futurite_oficial" target="_blank" rel="noopener noreferrer">TikTok</a>
                     </div>
                 </div>
@@ -523,13 +517,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- Chatbot Script -->
-    <script src="https://conversia.com.mx/assets/js/chatbot.js" id="chatbot-js"></script>
-    <script>
-        CHATKODEX.init({
-            host: window.location.host,
-            key: "JCkboYzTyI84m",
-        });
-    </script>
 </body>
 </html>

@@ -35,6 +35,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -863,9 +864,9 @@ a {
 
 .ns-badge {
     position: absolute;
-    top: -75px; /* Pull it up exactly half its height so it overlaps the border symmetrically */
-    width: 150px;
-    height: 150px;
+    top: -105px; /* Pull it up exactly half its height so it overlaps the border symmetrically */
+    width: 210px;
+    height: 210px;
     background: var(--clr-base); /* Crisp white center */
     border-radius: 50%; /* Perfect circle */
     display: flex;
@@ -886,13 +887,13 @@ a {
 }
 
 .ns-fillet-left {
-    left: -30px;
+    left: -26px;
     /* Draws a box that is white on the top-right, transparent on bottom-left */
     background: radial-gradient(circle at 0% 100%, transparent 30px, var(--clr-base) 30.5px);
 }
 
 .ns-fillet-right {
-    right: -30px;
+    right: -26px;
     /* Draws a box that is white on the top-left, transparent on bottom-right */
     background: radial-gradient(circle at 100% 100%, transparent 30px, var(--clr-base) 30.5px);
 }
@@ -911,7 +912,7 @@ a {
 
 .ns-svg text {
     font-family: var(--font-heading);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
     fill: var(--clr-primary); /* Brand blue for the text */
@@ -960,12 +961,12 @@ a {
 /* Masonry Gallery */
 .portfolio-gallery {
     column-count: 3;
-    column-gap: 30px;
+    column-gap: 50px;
 }
 
 .portfolio-item {
     break-inside: avoid;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -1107,92 +1108,6 @@ a {
 .footer-bottom {
     opacity: 0.6;
     font-size: 0.9rem;
-}
-
-/* === 7. CONTACT SECTION === */
-.contact-section {
-    padding: var(--section-pad);
-    background-color: var(--clr-base);
-}
-
-.contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-heading {
-    text-align: center;
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 800;
-    color: #6B7280;
-    margin-bottom: 48px;
-    line-height: 1.1;
-    letter-spacing: -2px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 20px 24px;
-    border: none;
-    background-color: #F3F4F6;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--clr-text);
-    outline: none;
-    transition: background-color var(--transition-fast);
-}
-
-.contact-form input {
-    border-radius: 100px;
-}
-
-.contact-form textarea {
-    border-radius: var(--border-radius-lg);
-    resize: vertical;
-    font-family: monospace;
-    padding-top: 24px;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #9CA3AF;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    background-color: #E5E7EB;
-}
-
-.contact-submit {
-    align-self: center;
-    margin-top: 16px;
-}
-
-@media(max-width: 600px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    .contact-heading {
-        font-size: 2.2rem;
-    }
-    .contact-submit {
-        align-self: stretch;
-        text-align: center;
-    }
 }
 
 /* === MEDIA QUERIES === */
@@ -1589,4 +1504,19 @@ a {
     .footer-big-link {
         font-size: 1.8rem;
     }
+}
+
+.portfolio-full-width {
+    margin: 60px 5rem 0 5rem;
+}
+@media(max-width: 992px) {
+    .portfolio-full-width { margin: 60px 24px 0 24px; }
+}
+@media(max-width: 768px) {
+    .portfolio-full-width { margin: 40px 16px 0 16px; }
+}
+
+/* Map filters for styling the map widget */
+.map-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(1.1);
 }
