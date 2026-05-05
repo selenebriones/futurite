@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerText = "Enviando...";
             submitBtn.disabled = true;
 
+            const urlParams = new URLSearchParams(window.location.search);
+            
             const payload = {
                 nombre: document.getElementById('formNombre').value,
                 apellidos: document.getElementById('formApellidos').value,
@@ -121,6 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 mensaje: document.getElementById('formMensaje').value,
                 origen: "https://futurite.mx/"
             };
+
+            const utmParams = ['utm_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+            utmParams.forEach(param => {
+                if (urlParams.has(param)) {
+                    payload[param] = urlParams.get(param);
+                }
+            });
 
             try {
                 const response = await fetch("https://n8n.ongoing.mx/webhook/aa97f360-8b05-45cc-98d4-8f576cd710c8", {
